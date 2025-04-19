@@ -34,7 +34,7 @@ graph.set_entry_point(GENERATE)
 
 
 def should_continue(state):
-    if(len(state) > 6):
+    if(len(state) > 2):
         return END
     return REFLECT
 

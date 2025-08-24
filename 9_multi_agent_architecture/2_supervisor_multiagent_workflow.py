@@ -97,7 +97,7 @@ def enhancer_node(state: MessagesState) -> Command[Literal["supervisor"]]:
         update={
             "messages": [
                 HumanMessage(
-                    content=enhanced_query, name="enhancer"
+                    content=enhanced_query.content, name="enhancer"
                 )
             ]
         },
